@@ -1,0 +1,115 @@
+
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Careplus - Consulation{% endblock %}</title>
+  <link rel="website icon" type="png" href="{% static 'careplus_logo1.png' %}">
+  <link rel="stylesheet" href="{% static 'bstyles.css' %}">
+  <link rel="stylesheet" href="{% static 'video_consultation.css' %}">
+  <link rel="stylesheet" href="{% static 'video_consultation.js' %}">
+  
+
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>Careplus</h1>
+      
+      
+
+    </div>
+    <span>
+      <nav>
+        <ul>
+          <li><a href="{% url 'about' %}">Home</a></li>
+          <li><a href="{% url 'patients' %}">Patients Portal</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'video_consulation' %}">Video Consulation</a></li>
+          <li> <a href="{%url 'appointment'%}">Book an Appointment</a></li>
+          <li><a href="{% url 'individuals' %}">Login</a></li>
+        </ul>
+      </nav>
+    </span>
+  </header>
+  
+
+  <title>Video Consultation</title>
+
+
+<body>
+ 
+    <h1>Welcome to Our Video Consultation Page</h1>
+    <p>Get the care you need from the comfort of your own home.</p>
+
+  <main>
+    <section id="consultation-info">
+      <h2>How It Works</h2>
+      <p>Our video consultation service allows you to connect with a healthcare professional from the comfort of your own home. Here's how it works:</p>
+      <div class="box">
+        <ol>
+          <li class="step">Schedule your appointment online or by phone.</li>
+          <li class="step">Receive a confirmation email with a link to join the video consultation.</li>
+        </ol>
+      </div>
+      <div class="box">
+        <ol start="2">
+          <li class="step">Click the link at the scheduled time to connect with your healthcare professional.</li>
+          <li class="step">Discuss your symptoms, ask questions, and receive a personalized treatment plan.</li>
+        </ol>
+      </div>
+    </section>
+    <section id="comments">
+      <h2>What Our Patients Are Saying</h2>
+      <blockquote>
+        <p>"I was hesitant to try video consultation at first, but it was so easy and convenient. I was able to get the care I needed without leaving my house."</p>
+        <cite>- Jane D.</cite>
+      </blockquote>
+      <blockquote>
+        <p>"The video consultation was just as effective as an in-person visit. I was able to ask all of my questions and get the treatment I needed."</p>
+        <cite>- John S.</cite>
+      </blockquote>
+    </section>
+    <section id="additional-info">
+      <h2>Additional Information</h2>
+      <p>Here are some additional things you should know about our video consultation service:</p>
+      <div class="box">
+        <ul>
+          <li>We accept most major insurance plans.</li>
+          <li>You will need a device with a camera and microphone to use the video consultation service.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <ul>
+          <li>Appointments are available Monday through Friday, 9am to 5pm.</li>
+          <li>If you have any questions or concerns, please contact our customer support team.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+   
+   
+
+ 
+
+
+<div class="button-container">
+<p><strong>{{ room_id }}</strong></p>
+<a href="{% url 'generate_room'  %}" class="join-button">Generate Code</a>
+</div>
+
+
+
+  {% csrf_token %}
+  <!-- Include the room_id value in the hidden input field -->
+  <input type="hidden" name="room_id" value="{{ room_id }}">
+  <div class="button-container">
+  <a href="{% url 'join_room'  %}" class="join-button">Join</a>
+
+  </div>
+

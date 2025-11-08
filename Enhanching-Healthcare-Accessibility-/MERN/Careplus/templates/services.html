@@ -1,0 +1,167 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Careplus - Services{% endblock %}</title>
+  <link rel="website icon" type="png" href="{% static 'careplus_logo1.png' %}">
+  <link rel="stylesheet" href="{% static 'bstyles.css' %}">
+  <link rel="stylesheet" href="{% static 'serstyle.css' %}">
+</head>
+<body>
+
+  <header>
+    
+      <h1>Careplus</h1>
+      
+      
+
+    
+    <span>
+      <nav>
+        <ul>
+          <li><a href="{% url 'about' %}">Home</a></li>
+          <li><a href="{% url 'patients' %}">Patients Portal</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'video_consulation' %}">Video Consulation</a></li>
+          <li> <a href="{%url 'appointment'%}">Book an Appointment</a></li>
+          <li><a href="{% url 'individuals' %}">Login</a></li>
+        </ul>
+      </nav>
+    </span>
+  </header>
+ 
+</head>
+<body>
+  <div class="service-container">
+    <div class="service-card">
+      <img src="{% static 'X-Ray1.jpeg' %}" alt="X-Ray">
+      <h2>X-Ray</h2>
+      <p>X-rays revolutionized medicine, enabling non-invasive insights into the human body's inner workings, from broken bones to detailed organ images, improving diagnostics worldwide.</p>
+      <a href="#" class="cta-button">Learn More</a>
+    </div>
+    <!-- Repeat the following div for each service -->
+    <div class="service-card">
+      <img src="{% static 'CT-SCAN.jpg' %}" alt="Cosmetic Dentistry">
+      <h2>CT-SCAN</h2>
+      <p>CT scans, or computed tomography, provide detailed cross-sectional images, aiding in precise diagnosis of conditions ranging from fractures to tumors, advancing medical accuracy and patient care globally.</p>
+      <a href="#" class="cta-button">Learn More</a>
+    </div>
+    <div class="service-card">
+      <img src="{% static 'Ultrasound.jpeg' %}" alt="Dental Implants">
+      <h2>Ultrasound</h2>
+      <p>Ultrasound, a safe and versatile imaging tool, offers real-time views of organs and tissues, guiding procedures and monitoring fetal development, crucially enhancing healthcare across diverse medical fields worldwide.</p>
+      <a href="#" class="cta-button">Learn More</a>
+    </div>
+    <div class="service-card">
+      <img src="{% static 'Cornea services.jpeg' %}" alt="Examination">
+      <h2>Cornea Services</h2>
+      <p>Cornea services provide essential care for vision, addressing conditions like infections and dystrophies, restoring sight and improving quality of life for countless individuals globally.</p>
+      <a href="#" class="cta-button">Learn More</a>
+    </div>
+    <div class="service-card">
+      <img src="{% static 'Dental.jpeg' %}" alt="Missing Teeth">
+      <h2>Dental</h2>
+      <p>Dental services ensure oral health, from routine cleanings to complex procedures, promoting overall well-being and confident smiles for patients worldwide.</p>
+      <a href="#" class="cta-button">Learn More</a>
+    </div>
+    <div class="service-card">
+      <img src="{% static 'Nutritional Coaching.jpeg' %}" alt="Teeth Pain">
+      <h2>Nutritional Coaching</h2>
+      <p>Fueling your body and mind with the right foods impacts your mental and physical health. Nutritional coaching can teach you things you never realized and put you on the right path to eating the right foods, making wise beverage choices, and learning how to nourish your skin, nails, hair, skin, and body from within.</p>
+      <a href="#" class="cta-button">Learn More</a>
+    </div>
+  </div>
+</body>
+
+<div class="container">
+  <div class="row">
+    <div class="service-item">
+      <h2>Couples Therapy</h2>
+      <img src="{% static 'Couples Therapy.jpeg' %}" alt="Teeth Pain">
+      <p>Couple therapy offers a safe space for partners to address conflicts, improve communication, and strengthen their relationship bonds, fostering deeper understanding and mutual support in just a few sessions.</p>
+    </div>
+    <div class="service-item">
+      <h2>Individuals</h2>
+      <img src="{% static 'Individuals.jpeg' %}" alt="Teeth Pain">
+      <p>Tailored to individual needs, our healthcare website provides personalized resources, expert advice, and support, empowering users to prioritize their well-being and make informed health decisions with confidence.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="service-item">
+      <h2>Teens & Youth</h2>
+      <img src="{% static 'Teens & Youth.jpeg' %}" alt="Teeth Pain">
+      <p>Designed for teens and youth, our healthcare website offers tailored guidance, relevant resources, and supportive communities, empowering young individuals to navigate health challenges, make informed choices, and prioritize their well-being with confidence and resilience.</p>
+    </div>
+    <div class="service-item">
+      <h2>Family Therapy</h2>
+      <img src="{% static 'Family Therapy.jpeg' %}" alt="Teeth Pain">
+      <p>Family therapy provides a collaborative space for families to address conflicts, strengthen relationships, and cultivate understanding, fostering resilience and harmony within the family unit in just a few sessions.</p>
+    </div>
+  </div>
+</div>
+  <title>My Programs</title>
+</head>
+<body>
+  <div class="my-programs-container">
+    <h2 class="my-programs-title">My Programs</h2>
+    <div class="my-programs-content">
+      <div class="program-item">
+        <img src="{% static 'program1.jpeg' %}" alt="Teeth Pain">
+        <h3>Program 1</h3>
+        <p>Introducing our program on the healthcare website: A comprehensive solution offering personalized guidance, informative resources, and interactive tools, empowering users to proactively manage their health journey with confidence and ease.</p>
+      </div>
+      <div class="program-item">
+        <img src="{% static 'program2.jpeg' %}" alt="Teeth Pain">
+        <h3>Program 2</h3>
+        <p>Unveiling our healthcare website program: A transformative initiative providing accessible resources, expert support, and tailored solutions, guiding users towards optimal health and well-being with convenience and empowerment.</p>
+      </div>
+      <div class="program-item">
+        <img src="{% static 'program3.jpeg' %}" alt="Teeth Pain">
+        <h3>Program 3</h3>
+        <p>Unveiling our healthcare website program: A transformative initiative providing accessible resources, expert support, and tailored solutions, guiding users towards optimal health and well-being with convenience and empowerment.</p>
+      </div>
+    </div>
+  </div>
+</body>
+ 
+
+  <div class="testimonial-container">
+    <div class="testimonial-content">
+    <p>"Your expertise and compassionate care have truly transformed my journey to healing. Thank you for guiding me towards a brighter, healthier future."
+      
+    
+    
+
+
+
+
+    </p>
+    <h4>Arron Ramsey<span>-Patient</span></h4>
+    </div>
+   </div>
+  <div class="news-container">
+    <h2 class="news-title">The Latest News</h2>
+    <div class="news-items">
+    <div class="news-item">
+    <time datetime="2018-09-28">28 Sep 2023</time>
+    <h3> What are the key benefits of practicing mindfulness meditation?</h3>
+    <p>Mindfulness meditation offers numerous benefits, including stress reduction, improved focus and attention, enhanced emotional regulation, and increased self-awareness. </p>
+    <span class="comments-count">93 Comments</span>
+    </div>
+    <div class="news-item">
+    <time datetime="2018-09-28">28 Dec 2023</time>
+    <h3>How does regular exercise impact mental health?</h3>
+    <p>Regular exercise has been shown to have a profound positive impact on mental health. It can reduce symptoms of anxiety and depression, improve mood, boost self-esteem.</p>
+    <span class="comments-count">45 Comments</span>
+    </div>
+    <div class="news-item">
+    <time datetime="2018-09-28">28 Jan 2024</time>
+    <h3>What role does diet play in maintaining heart health?</h3>
+    <p>Diet plays a crucial role in maintaining heart health. Consuming a balanced diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats can help lower cholesterol levels, regulate blood pressure, and reduce the risk of heart disease.</p>
+    <span class="comments-count">3 Comments</span>
+    </div>
+    </div>
+   </div>
+   

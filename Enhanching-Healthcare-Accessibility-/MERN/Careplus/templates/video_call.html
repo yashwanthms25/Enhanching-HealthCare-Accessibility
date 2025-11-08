@@ -1,0 +1,61 @@
+<!-- video_call.html -->
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Careplus - Video Consulatation{% endblock %}</title>
+  <link rel="website icon" type="png" href="{% static 'careplus_logo1.png' %}">
+  <link rel="stylesheet" href="{% static 'bstyles.css' %}">
+</head>
+
+<link rel="stylesheet" href="{% static 'video_consultation.css' %}">
+<link rel="stylesheet" href="{% static 'video_consultation.js' %}">
+
+  <link rel="stylesheet" href="{% static 'video_consultation.css' %}">
+  <link rel="stylesheet" href="{% static 'video_consultation.js' %}">
+  <h1>Video Consultation</h1>
+  <p>Share this room ID with others to join the call: <strong>{{ room_id }}</strong></p>
+  <div class="video-consultation-container">
+    <div class="video-container">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay></video>
+    </div>
+    <div class="controls">
+      <button id="startButton">Start Call</button>
+      <button id="hangupButton" disabled>Hang Up</button>
+      <div class="comments">
+        <h2>Comments</h2>
+        <ul id="commentsList">
+          <!-- Comments will be displayed here -->
+          <div class="activity">
+            <div class="activity-user">
+                <img src="{% static 'p4.jpeg' %}" alt="Parveen Kumar profile picture" class="activity-profile-picture">
+                <div class="activity-user-info">
+                    <h3>Nalina</h3>
+                    <p>8 days, 2 hours ago</p>
+                </div>
+            </div>
+            
+        </ul>
+        <form id="commentForm">
+          <input type="hidden" id="currentUser" value="{{ user.username }}">
+          <input type="hidden" id="currentProfileImage" value="{{ user.profile.image.url }}">
+          <textarea id="commentText" required></textarea>
+          <button type="submit">Send</button>
+          <div class="emojis">
+            <!-- Emojis will be displayed here -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+{% block scripts %}
+  <script src="{% static 'js/video_consultation.js' %}"></script>
+  <script src="{% static 'js/comments.js' %}"></script>
+{% endblock %}

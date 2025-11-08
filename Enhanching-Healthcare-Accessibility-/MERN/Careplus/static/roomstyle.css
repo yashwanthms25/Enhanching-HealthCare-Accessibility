@@ -1,0 +1,141 @@
+#announcements { float: left; width: 70%; } #announcements h1 { font-size: 24px; font-weight: bold; margin-bottom: 20px; } #announcements .note { font-size: 14px; margin-bottom: 20px; } #announcements #message-box { width: 100%; border: 1px solid #ccc; border-radius: 5px; padding: 15px; box-sizing: border-box; display: flex; align-items: center; margin-bottom: 20px; } #announcements #message-box textarea { flex: 1; padding: 10px; border: none; border-radius: 5px; background-color: #f5f5f5; font-size: 16px; margin-left: 15px; } #announcements #message-box .send-button { background-color: #2ecc71; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-left: 15px; } #announcements #message-box .send-button:hover { background-color: #27ae60; } #announcements #messages { list-style: none; padding: 0; margin: 0; max-height: 400px; overflow-y: auto; } #announcements #messages li { padding: 10px; border-bottom: 1px solid #ccc; display: flex; align-items: center; } #announcements #messages li:hover { background-color: #f5f5f5; } #announcements #messages li img { width: 50px; height: 50px; border-radius: 50%; margin-right: 10px; } #announcements #messages li .username { font-weight: bold; margin-right: 10px; color: #333; } #announcements #messages li .message-text { flex: 1; font-size: 16px; color: #333; } #participants { float: right; width: 25%; padding: 20px; border-left: 1px solid #ccc; } #participants h3 { font-size: 24px; font-weight: bold; margin-bottom: 20px; } #participants ul { list-style: none; padding: 0; margin: 0; } #participants li { padding: 10px; border-bottom: 1px solid #ccc; display: flex; align-items: center; } #participants li:hover { background-color: #f5f5f5; } #participants li img { width: 50px; height: 50px; border-radius: 50%; margin-right: 10px; } #participants li .username { font-weight: bold; margin-right: 10px; color: #333; } #participants li .name { margin-right: 10px; color: #333; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #announcements {
+    float: left;
+    width: 70%;
+    padding: 20px;
+  }
+  
+  #announcements h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .note {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #777;
+  }
+  
+  #message-box {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #message-box textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  
+  #message-box .send-button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  
+  #message-box .send-button:hover {
+    background-color: #27ae60;
+  }
+  
+  #messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  #messages li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+  }
+  
+  #messages li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  #messages li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  #messages li .username {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  #messages li .message-text {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  #participants {
+    float: right;
+    width: 25%;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+  }
+  
+  #participants h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #participants ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #participants li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+  }
+  
+  #participants li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  #participants li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  #participants li .username {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+  }
+  

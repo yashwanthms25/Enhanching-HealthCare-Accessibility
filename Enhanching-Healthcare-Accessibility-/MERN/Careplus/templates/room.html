@@ -1,0 +1,158 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Careplus - Rooms{% endblock %}</title>
+  <link rel="website icon" type="png" href="{% static 'careplus_logo1.png' %}">
+  
+<link rel="stylesheet" href="{% static 'roomstyle.css' %}">
+
+</head>
+<body>
+  <div id="announcements">
+    <a id="back-button" href="{% url 'patients' %}">&laquo; Back to home</a>
+    <h1 id="announcement-title">HIV & AIDS </h1>
+    <a id="join-button" href="{% url 'about' %}">Join</a>
+    <p id="note">Note: Only the most recent 25 messages will be displayed.</p>
+    <ul id="messages">
+      <li>
+        <img src="{% static 'p1.jpg' %}" alt="User 1">
+        <span class="username">@LizDoesBiz</span>
+        <span class="message">Hello, this is a sample message.</span>
+      </li>
+      <li>
+        <img src="{% static 'p2.jpg' %}" alt="User 1">
+        <span class="username">@JStaysWoke</span>
+        <span class="message">Hello, this is a sample message.</span>
+      </li>
+      <li>
+        <img src="{% static 'p3.jpg' %}" alt="User 1">
+        <span class="username">@ArtbyAri</span>
+        <span class="message">Hello, this is a sample message.</span>
+      </li>
+      <li>
+        <img src="{% static 'p4.jpeg' %}" alt="User 1">
+        <span class="username">@Carla_Writer</span>
+        <span class="message">Make a play on words.</span>
+      </li>
+      <li>
+        <img src="{% static 'p5.jpeg' %}" alt="User 2">
+        <span class="username">@ArtistOfLight</span>
+        <span class="message">Do something totally random.</span>
+      </li>
+    </ul>
+  </div>
+
+  <div id="participants">
+    <h3>Participants (260)</h3>
+    <ul>
+      <li>
+        <img src="{% static 'p6.jpeg' %}" alt="User 3">
+        <span class="username">@KimPossible</span>
+        <span class="name">Keerti</span>
+      </li>
+      <li>
+        <img src="{% static 'p7.jpeg' %}" alt="User 3">
+        <span class="username">@BrandCo</span>
+        <span class="name">Kruti</span>
+      </li>
+      <li>
+        <img src="{% static 'p8.jpeg' %}" alt="User 3">
+        <span class="username">@90sKidKate</span>
+        <span class="name">Sidddu</span>
+      </li>
+      <li>
+        <img src="{% static 'p3.jpg' %}" alt="User 3">
+        <span class="username">@GeminiGal</span>
+        <span class="name">John Doe</span>
+      </li>
+      <li>
+        <img src="{% static 'p9.png' %}" alt="User 3">
+        <span class="username">@HappyHank</span>
+        <span class="name">Hank</span>
+      </li>
+      <li>
+        <img src="{% static 'p1.jpg' %}" alt="User 3">
+        <span class="username">@KarlNexus</span>
+        <span class="name">Hello</span>
+      </li>
+      <li>
+        <img src="{% static 'p2.jpg' %}" alt="User 3">
+        <span class="username">@NameBeyond</span>
+        <span class="name">Beyond</span>
+      </li>
+      <li>
+        <img src="{% static 'p3.jpg' %}" alt="User 3">
+        <span class="username">@rakesh</span>
+        <span class="name">Rakesh</span>
+      </li>
+      <li>
+        <img src="{% static 'p4.jpeg' %}" alt="User 3">
+        <span class="username">@nalina</span>
+        <span class="name">Posita</span>
+      </li>
+      <li>
+        <img src="{% static 'p5.jpeg' %}" alt="User 3">
+        <span class="username">@ds</span>
+        <span class="name">waste</span>
+      </li>
+      <li>
+        <img src="{% static 'p6.jpeg' %}" alt="User 3">
+        <span class="username">@user</span>
+        <span class="name">Gulikat</span>
+      </li>
+      <li>
+        <img src="{% static 'p3.jpg' %}" alt="User 3">
+        <span class="username">@george</span>
+        <span class="name">George</span>
+      </li>
+      <li>
+        <img src="{% static 'p4.jpeg' %}" alt="User 3">
+        <span class="username">@alliance</span>
+        <span class="name">Bobby</span>
+      </li>
+      <li>
+        <img src="{% static 'p5.jpeg' %}" alt="User 3">
+        <span class="username">@vicky</span>
+        <span class="name">Vicky</span>
+      </li>
+      <li>
+        <img src="{% static 'p8.jpeg' %}" alt="User 3">
+        <span class="username">@vikas</span>
+        <span class="name">Vikas</span>
+      </li>
+      <li>
+        <img src="{% static 'p7.jpeg' %}" alt="User 3">
+        <span class="username">@vikram</span>
+        <span class="name">Vikram</span>
+      </li>
+      <li>
+        <img src="{% static 'p4.jpeg' %}" alt="User 3">
+        <span class="username">@varun</span>
+        <span class="name">Jhony</span>
+      </li>
+      <li>
+        <img src="{% static 'p1.jpg' %}" alt="User 3">
+        <span class="username">@nandini</span>
+        <span class="name">Deepa</span>
+      </li>
+      <li>
+        <img src="{% static 'p2.jpg' %}" alt="User 3">
+        <span class="username">@hemu_ok</span>
+        <span class="name">bunny</span>
+      </li> <li>
+        <img src="{% static 'p3.jpg' %}" alt="User 3">
+        <span class="username">@nameis123</span>
+        <span class="name">yashu</span>
+      </li>
+      <li>
+        <img src="{% static 'p4.jpeg' %}" alt="User 4">
+        <span class="username">@bsdk</span>
+        <span class="name">Doe</span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

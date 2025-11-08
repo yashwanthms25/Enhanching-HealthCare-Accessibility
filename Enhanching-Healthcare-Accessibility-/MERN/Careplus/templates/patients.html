@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Careplus - Patients portal{% endblock %}</title>
+  <link rel="website icon" type="png" href="{% static 'careplus_logo1.png' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'estyle.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'bstyles.css' %}">
+ 
+</head>
+
+
+  <header>
+    <div>
+      <h1>Careplus</h1>
+      
+      
+
+    </div>
+    <span>
+      <nav>
+        <ul>
+          <li><a href="{% url 'about' %}">Home</a></li>
+          <li><a href="{% url 'patients' %}">Patients Portal</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'video_consulation' %}">Video Consulation</a></li>
+          <li> <a href="{%url 'appointment'%}">Book an Appointment</a></li>
+          <li><a href="{% url 'individuals' %}">Login</a></li>
+        </ul>
+      </nav>
+    </span>
+  </header>
+<body>
+ 
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'estyle.css' %}">
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" placeholder="Search for disease or rooms" id="search-box">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    <main>
+        <section class="browse-topics">
+            <h2>BROWSE DISEASE</h2>
+            <ul>
+                <li><a href="#">Asthma(187)</a></li>
+                <li><a href="#">Cancer (221)</a></li>
+                <li><a href="#">Heart & Stroke (40)</a></li>
+                <li><a href="#">Viral Hepatitis (28)</a></li>
+                <li><a href="#">Diabetes (14)</a></li>
+                <li><a href="#">HIV & AIDS(9)</a></li>
+                <li><a href="#">Kidney Cancer (10)</a></li>
+                <li><a href="#">Salmonella (14)</a></li>
+                <li><a href="#">Infection Disease (7)</a></li>
+                <li><a href="#">Mpox (7)</a></li>
+            </ul>
+        </section>
+        <section class="rooms">
+            <h2>ROOMS</h2>
+            <div class="rooms-list">
+                <div class="room">
+                    <h3>HIV & AIDS</h3>
+                    <p>Host : Dr.Dennis</p>
+                    <a href="{% url 'room' %}" class="join-room-button">Join Room</a>
+                </div>
+                <div class="room">
+                  <h3>Mpox</h3>
+                  <p>Host : Dr.Ivy</p>
+                  <a href="{% url 'room' %}" class="join-room-button">Join Room</a>
+              </div>
+              <div class="room">
+                <h3>Salmonella</h3>
+                <p>Host : Dr.Khan</p>
+                <a href="{% url 'room' %}"class="join-room-button">Join Room</a>
+            </div>
+            <div class="room">
+              <h3>Cancer</h3>
+              <p>Host : Dr.Tejaswini</p>
+              <a href="{% url 'room' %}" class="join-room-button">Join Room</a>
+          </div>
+                <!-- Add more rooms as needed -->
+            </div>
+            <div class="create-room-container">
+                <button class="create-room-button"> <a href="{% url 'roomform' %}">+ Create Room</a></button>
+            </div>
+        </section>
+        <section class="top-hosts">
+            <h2>TOP DOCTOR'S</h2>
+            <ul>
+                <li>
+                    <div class="host">
+                        <img src="{% static 'doctor2.jpg' %}" alt="Dennis Ivy profile picture" class="host-profile-picture">
+                        <div class="host-info">
+                            <h3>Dr.Tejaswini</h3>
+                            <p>2 days, 5 hours ago</p>
+                        </div>
+                        <a href="#" id="follow-button" class="follow-button">Follow</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="host">
+                        <img src="{% static 'doctor1.jpg' %}" alt="Dennis Ivy profile picture" class="host-profile-picture">
+                        <div class="host-info">
+                            <h3>Dr.Khan</h3>
+                            <p>4 days, 8 hours ago</p>
+                        </div>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="host">
+                        <img src="{% static 'doctor6.jpg' %}" alt="Dennis Ivy profile picture" class="host-profile-picture">
+                        <div class="host-info">
+                            <h3>Dr.Mohit Babu</h3>
+                            <p>7 days, 3 hours ago</p>
+                        </div>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="host">
+                        <img src="{% static 'doctor3.jpg' %}" alt="Dennis Ivy profile picture" class="host-profile-picture">
+                        <div class="host-info">
+                            <h3>Dr.Yashwanth</h3>
+                            <p>10 days, 1 hours ago</p>
+                        </div>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="host">
+                        <img src="{% static 'doctor5.jpg' %}" alt="Dennis Ivy profile picture" class="host-profile-picture">
+                        <div class="host-info">
+                            <h3>Dr.Nalina</h3>
+                            <p>12 days, 6 hours ago</p>
+                        </div>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="host">
+                        <img src="{% static 'doctor4.jpg' %}" alt="Parveen Kumar profile picture" class="host-profile-picture">
+                        <div class="host-info">
+                            <h3>Dr.Parveen Kumar</h3>
+                            <p>4 days, 2 hours ago</p>
+                        </div>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+                </li>
+                <!-- Add more top hosts as needed -->
+            </ul>
+        </section>
+        <section class="recent-activities">
+          <h2>RECENT ACTIVITIES</h2>
+          <ul>
+              <li>
+                  <div class="activity">
+                      <div class="activity-user">
+                          <img src="{% static 'doctor7.jpg' %}" alt="Dennis Ivy profile picture" class="activity-profile-picture">
+                          <div class="activity-user-info">
+                              <h3>Dr.Dennis</h3>
+                              <p>2 days, 5 hours ago</p>
+                          </div>
+                      </div>
+                      <div class="activity-content">
+                          <p>replied to post "Dennis Public Announcements" in <a href="#">Cancer (221)</a></p>
+                          <p>Thanks very much for the guidance, <a href="#">Login</a></p>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="activity">
+                      <div class="activity-user">
+                          <img src="{% static 'doctor4.jpg' %}" alt="Parveen Kumar profile picture" class="activity-profile-picture">
+                          <div class="activity-user-info">
+                              <h3>Dr.Parveen Kumar</h3>
+                              <p>8 days, 2 hours ago</p>
+                          </div>
+                      </div>
+                      <div class="activity-content">
+                          <p>created a new room: <a href="#">Viral Hepatitis (28)</a></p>
+                      </div>
+                  </div>
+              </li>
+              <!-- Add more recent activities as needed -->
+          </ul>
+      </section>
+      
