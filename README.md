@@ -20,7 +20,7 @@ It aims to provide a seamless digital healthcare experience — enabling users t
 ---
 
 ## 🏗️ Project Structure
-
+```bash
 Enhanching-HealthCare-Accessibility/
 │
 ├── backend/ # Backend services (Spring Boot / Flask / Django)
@@ -31,7 +31,7 @@ Enhanching-HealthCare-Accessibility/
 ├── models/ # ML models for disease prediction
 ├── README.md # Documentation
 └── requirements.txt / pom.xml / package.json # Dependencies file
-
+```
 
 ---
 
@@ -53,26 +53,24 @@ pip install -r requirements.txt
 
 python manage.py runserver
 ```
-💻 Technologies Used
+## 💻 Technologies Used
 
+- **Frontend:** HTML, CSS, JavaScript, React.js / Bootstrap  
+- **Backend:** Flask / Django / Spring Boot  
+- **Database:** MySQL / SQLite / PostgreSQL  
+- **AI / ML:** Python, TensorFlow / Scikit-learn  
+- **APIs:** Twilio (for SMS/alerts), Email API  
+- **Tools:** VS Code, Postman, Git, Maven / pip  
 
-| Layer        | Technology                                  |
-| ------------ | ------------------------------------------- |
-| **Frontend** | HTML, CSS, JavaScript, React.js / Bootstrap |
-| **Backend**  | Flask / Django / Spring Boot                |
-| **Database** | MySQL / SQLite / PostgreSQL                 |
-| **AI/ML**    | Python, TensorFlow / Scikit-learn           |
-| **APIs**     | Twilio (for SMS/alerts), Email API          |
-| **Tools**    | VS Code, Postman, Git, Maven / pip          |
+---
 
+## 📈 Future Enhancements
 
-📈 Future Enhancements
-
-🤖 AI Chatbot for symptom discussion
-🩻 Integration of medical image diagnostics (X-ray / MRI)
-📱 Mobile App version (Flutter / React Native)
-☁️ Cloud deployment on AWS or Render
-🧾 Blockchain-based medical record verification
+- 🤖 **AI Chatbot** for real-time symptom discussion and basic diagnosis  
+- 🩻 **Medical Image Diagnostics** — X-ray and MRI scan analysis using CNN models  
+- 📱 **Mobile App Version** built using Flutter or React Native for Android/iOS  
+- ☁️ **Cloud Deployment** on AWS, Render, or Azure for real-time scalability  
+- 🧾 **Blockchain-Based Medical Record Verification** for secure data sharing  
 
 
 
